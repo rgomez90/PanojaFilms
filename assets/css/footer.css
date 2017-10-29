@@ -16,11 +16,6 @@
     margin-top: 30px;
 }
 
-#myFooter .navbar-brand {
-    margin-top: 45px;
-    height: 65px;
-}
-
 #myFooter .footer-copyright p {
     margin: 10px;
     color: #ccc;
@@ -53,7 +48,7 @@
 #myFooter a:hover,
 #myFooter a:focus {
     text-decoration: none;
-    color: white;
+    color: rgb(250, 4, 4);
 }
 
 #myFooter .social-networks {
@@ -68,6 +63,12 @@
     padding: 10px;
     transition: 0.2s;
 }
+
+#myFooter .contact:hover{
+    color:#ffffff;
+    background-color: #ef1a1a
+}
+
 
 #myFooter .social-networks a:hover {
     text-decoration: none;
@@ -88,12 +89,13 @@
 #myFooter .btn {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-    border-radius: 20px;
-    border: none;
-    width: 150px;
-    display: block;
+    border-radius: 10px;
+    border: 0px;
+    width: 10rem;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top:75px;
+    text-align: center;
+    display: block;
     line-height: 25px;
 }
 

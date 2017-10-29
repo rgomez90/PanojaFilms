@@ -4,10 +4,15 @@
 
 
 #mynav {
-    font-size: 20px;
-    margin-top: 5px;
+    font-size: 100%;
+}
+
+#mynav .nav-link:hover {
+    color: grey
 }
 
 .jumbotron {
     margin-bottom:0;
 }
+
+.movies > .col-md { margin-left: 1rem; margin-right: 1rem; }

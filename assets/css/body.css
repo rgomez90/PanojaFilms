@@ -1,0 +1,13 @@
+.tooltip > .tooltip-inner {background-color: #f00;max-width:1000px}
+.tooltip > .tooltip-arrow { border-bottom-color:#f00; }
+.tooltip {width: 100%}
+
+
+#mynav {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.jumbotron {
+    margin-bottom:0;
+}

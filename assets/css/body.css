@@ -11,8 +11,22 @@
     color: grey
 }
 
+
+
 .jumbotron {
     margin-bottom:0;
 }
 
-.movies > .col-md { margin-left: 1rem; margin-right: 1rem; }
+.movies {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.movie-thumbs {
+    box-shadow: 10px 7px 24px 0px rgba(255,0,0,0.68);
+    border-radius: 10px;
+}
+
+.movie-thumbs > img {
+    border-radius: 10px;
+}

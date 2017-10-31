@@ -3,10 +3,6 @@
 .tooltip {width: 100%}
 
 
-#mynav {
-    font-size: 100%;
-}
-
 #mynav .nav-link:hover {
     color: grey
 }
@@ -23,7 +19,9 @@
 }
 
 .movie-thumbs {
-    box-shadow: 10px 7px 24px 0px rgba(255,0,0,0.68);
+    box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
+    -webkit-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
+    -moz-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     border-radius: 10px;
 }
 

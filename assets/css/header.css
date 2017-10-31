@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'CoffeeTin';
+	src: url('../../assets/CoffeeTinInitials.eot');
+	src: url('../../assets/CoffeeTinInitials.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/CoffeeTinInitials.woff') format('woff'),
+		url('../../assets/CoffeeTinInitials.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.navbar {
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    background-color: black !important;
+}
+
+.navbar-brand:hover {
+    color: red !important;
+}
+
+.navbar-brand {
+    font-family: 'CoffeeTin' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3rem;
+    padding: 0;
+}
+
+#navbarHome .nav-link {
+    font-size: 150%;
+    margin: 0 auto;
+    
+}
+
+#navbarHome .nav-link:hover {
+    color:red;
+}

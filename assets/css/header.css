@@ -1,9 +1,9 @@
 @font-face {
 	font-family: 'CoffeeTin';
-	src: url('../../assets/CoffeeTinInitials.eot');
-	src: url('../../assets/CoffeeTinInitials.eot?#iefix') format('embedded-opentype'),
-		url('../../assets/CoffeeTinInitials.woff') format('woff'),
-		url('../../assets/CoffeeTinInitials.ttf') format('truetype');
+	src: url('../fonts/CoffeeTinInitials.eot');
+	src: url('../fonts/CoffeeTinInitials.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CoffeeTinInitials.woff') format('woff'),
+		url('../fonts/CoffeeTinInitials.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

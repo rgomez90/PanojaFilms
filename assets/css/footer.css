@@ -1,29 +1,10 @@
 #myFooter {
     background-color: #000000;
     color: white;
-
 }
 
 #myFooter .row {
     margin-top: 30px;
-}
-
-#myFooter .footer-copyright {
-    background-color: #333333;
-    text-align: center;
-    display: flex;
-}
-
-#myFooter .footer-copyright p {
-    color: #ccc;
-    margin: 0 auto; 
-    padding: 1rem;
-}
-
-#myFooter ul {
-    list-style-type: none;
-    padding-left: 0;
-    line-height: 1.7;
 }
 
 #myFooter h5 {
@@ -31,12 +12,6 @@
     color: white;
     font-weight: bold;
     margin-top: 30px;
-}
-
-#myFooter h2 a{
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
 }
 
 #myFooter a {
@@ -48,7 +23,6 @@
 #myFooter a:focus {
     color: rgb(250, 4, 4);
 }
-
 
 #myFooter .social-networks {
     text-align: center;
@@ -63,8 +37,8 @@
     transition: 0.2s;
 }
 
-#myFooter .contact:hover{
-    color:#ffffff;
+#myFooter .contact:hover {
+    color: #ffffff;
     background-color: #ef1a1a
 }
 
@@ -93,4 +67,3 @@
     display: block;
     line-height: 25px;
 }
-

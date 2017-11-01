@@ -17,11 +17,7 @@
 
     <title>Panoja Films - Guillermo Paniagua</title>
 
-    <link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="favicon-62.png" sizes="62x62" type="image/png">
-    <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
 
     <!-- These meta tags come first. -->
     <meta charset="utf-8">
@@ -41,68 +37,70 @@
 
     <!-- Include the CSS -->
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-
+    <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/body.css">
     <link rel="stylesheet" href="assets/css/header.css">
+
+    <!-- Include jQuery (required) and the JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+
+    </script>
 </head>
 
-<body style="background-color:black">
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<body style="background-color: black">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand navbar-light" href="index.html">Panoja Films</a>
+            <a class="navbar-brand navbar-light" href="index.html">Panoja Films</a>
 
-        <div class="collapse navbar-collapse" id="navbarHome">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cortometrajes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Series</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Mi</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarHome">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cortometrajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Mi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div class=" jumbotron-fluid" style="background: url(assets/img/logo-banner.jpg); background-size: 100% 100%; padding-top: 7rem; padding-bottom: 7rem">
     </div>
+
     <div class="container-fluid">
-        <div class="row movies">
-            <div class=" col-md-2" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>" src="assets/img/skull-white.jpg" alt="Card image cap">
-                <img class="movie-thumbs img-fluid" src="assets/img/skull-white.jpg" alt="Card image cap">
-            </div>
+        <div class="row">
+            <img class="movie-thumbs img-fluid col-sm-2" src="assets/img/skull-white.jpg" alt="Card image cap" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>">
 
-            <div class=" col-md-2" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>" src="assets/img/skull-white.jpg" alt="Card image cap">
-                <img class="movie-thumbs img-fluid" src="assets/img/skull-white.jpg" alt="Card image cap">
-            </div>
+            <img class="movie-thumbs img-fluid col-sm-2" src="assets/img/skull-white.jpg" alt="Card image cap" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>">
 
-            <div class=" col-md-2" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>" src="assets/img/skull-white.jpg" alt="Card image cap">
-                <img class="movie-thumbs img-fluid" src="assets/img/skull-white.jpg" alt="Card image cap">
-            </div>
+            <img class="movie-thumbs col-sm-2" src="assets/img/skull-white.jpg" alt="Card image cap" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>">
 
-            <div class=" col-md-2" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>" src="assets/img/skull-white.jpg" alt="Card image cap">
-                <img class="movie-thumbs img-fluid" src="assets/img/skull-white.jpg" alt="Card image cap">
-            </div>
+            <img class="movie-thumbs col-sm-2" src="assets/img/skull-white.jpg" alt="Card image cap" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>">
 
-            <div class=" col-md-2" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>" src="assets/img/skull-white.jpg" alt="Card image cap">
-                <img class="movie-thumbs img-fluid" src="assets/img/skull-white.jpg" alt="Card image cap">
-            </div>
+            <img class="movie-thumbs col-sm-2" src="assets/img/skull-white.jpg" alt="Card image cap" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>">
 
-            <div class=" col-md-2" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>" src="assets/img/skull-white.jpg" alt="Card image cap">
-                <img class="movie-thumbs img-fluid" src="assets/img/skull-white.jpg" alt="Card image cap">
-            </div>
+            <img class="movie-thumbs col-sm-2" src="assets/img/skull-white.jpg" alt="Card image cap" data-toggle="popover" data-placement="auto" data-trigger="hover click" data-html="true" title="Cuerdos y Locos" data-content="<h1>TEST</h1>">
         </div>
     </div>
-    <footer id="myFooter">
-        <div class="container">
+
+    <footer id="myFooter" class="">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col  social-networks">
                     <h5>Youtube</h5>
@@ -128,13 +126,12 @@
             </div>
 
         </div>
-
-        <div class=" footer-copyright text-white text-center">
+        <div class=" footer-copyright text-center">
             <p>© 2017 Copyright
                 <a href="http://panojafilms.com">PanojaFilms</a> - All Rights Reserved. </p>
         </div>
-
     </footer>
+
     <!-- Include jQuery (required) and the JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -145,6 +142,7 @@
         })
 
     </script>
+
 </body>
 
 </html>

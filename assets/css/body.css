@@ -3,28 +3,17 @@
 .tooltip {width: 100%}
 
 
-#mynav .nav-link:hover {
-    color: grey
-}
-
-
-
-.jumbotron {
-    margin-bottom:0;
-}
-
-.movies {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-}
-
 .movie-thumbs {
-    box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
+
+}
+
+
+
+/*
+.movie-thumbs {
+   box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     -webkit-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     -moz-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     border-radius: 10px;
-}
-
-.movie-thumbs > img {
-    border-radius: 10px;
-}
+    }
+*/

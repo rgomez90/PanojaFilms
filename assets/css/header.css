@@ -18,29 +18,13 @@
     color: red !important;
 }
 
-.navbar-brand {
-    font-family: 'CoffeeTin' !important;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 3rem;
-    padding: 0;
-}
 
 #navbarHome .nav-link {
     font-size: 150%;
+    font-family: 'CoffeeTin';
+    color:red
     
 }
 
-#navbarHome .nav-link:hover {
-    color:red;
-}
 
 
-#mainNavbar ul {
-    text-align: center;
-    list-style-type: none
-}
-
-#mainNavbar ul li {
-    display: inline-block
-}

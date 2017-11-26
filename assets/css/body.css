@@ -2,29 +2,23 @@
 .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
 .tooltip {width: 100%}
 
+html, body {
+    width: 100%;
+    height: 100%
+}
 
-#mynav .nav-link:hover {
-    color: grey
+#movies {
+    margin-top: 4rem;
+    margin-bottom: 4rem
 }
 
 
 
-.jumbotron {
-    margin-bottom:0;
-}
-
-.movies {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-}
-
+/*
 .movie-thumbs {
-    box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
+   box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     -webkit-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     -moz-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
     border-radius: 10px;
-}
-
-.movie-thumbs > img {
-    border-radius: 10px;
-}
+    }
+*/

@@ -28,10 +28,19 @@
 
 #navbarHome .nav-link {
     font-size: 150%;
-    margin: 0 auto;
     
 }
 
 #navbarHome .nav-link:hover {
     color:red;
+}
+
+
+#mainNavbar ul {
+    text-align: center;
+    list-style-type: none
+}
+
+#mainNavbar ul li {
+    display: inline-block
 }

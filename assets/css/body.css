@@ -2,6 +2,17 @@
 .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
 .tooltip {width: 100%}
 
+html, body {
+    width: 100%;
+    height: 100%
+}
+
+#movies {
+    margin-top: 4rem;
+    margin-bottom: 4rem
+}
+
+
 
 /*
 .movie-thumbs {

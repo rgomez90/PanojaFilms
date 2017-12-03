@@ -1,0 +1,54 @@
+/* ENTIRE DOCUMENT */
+/* Styling for the whole page */
+
+  
+  /* HEADER */
+  .masthead {
+    /* Layout declarations */
+    background: url("../img/gp/gp-camara-green-sized.png") no-repeat fixed center;
+    background-size: cover;
+    padding: 1em 2em;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    /* Typography declarations */
+    font-size: 4em;
+  }
+  
+  .masthead-intro {
+    margin: 1em 0 0 0;
+  }
+  
+  .masthead-heading {
+    /* Typography declarations */
+    font-size: 10rem;
+    /* Layout declarations */
+    padding: 0;
+    margin: 0 0 1em;
+  }
+  
+  /* BODY */
+  /* General styling for the three sections of the body */
+  section {
+    /* Layout declarations */
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+  }
+    
+  /* The p tags that are descendants of the section tags are the answers */
+  section p {
+    /* Typography declarations */
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  
+  /* This class is included in the last p tag of each section to create more space */
+  .space-maker {
+    /* Layout declarations */
+    margin-bottom: 3em;
+  }
+  
+ 

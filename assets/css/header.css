@@ -18,6 +18,9 @@
     color: red !important;
 }
 
+.active {
+    font-size: 120%
+}
 
 #navbarHome .nav-link {
     font-size: 150%;

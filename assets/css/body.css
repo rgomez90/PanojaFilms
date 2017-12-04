@@ -12,6 +12,9 @@ html, body {
     margin-bottom: 4rem
 }
 
+#movies img:hove {
+    width: 100%
+}
 
 
 /*

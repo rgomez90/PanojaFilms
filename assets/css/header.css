@@ -8,17 +8,17 @@
 	font-style: normal;
 }
 
-.navbar {
+#myHeader .navbar {
     padding-top:1rem;
     padding-bottom: 1rem;
     background-color: black !important;
 }
 
-.navbar-brand:hover {
+#myHeader .navbar-brand:hover {
     color: red !important;
 }
 
-.active {
+#myHeader .active {
     font-size: 120%
 }
 

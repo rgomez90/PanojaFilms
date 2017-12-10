@@ -12,8 +12,12 @@ html, body {
     margin-bottom: 4rem
 }
 
-#movies img:hove {
-    width: 100%
+#movies img {
+    transition: all .3s ease-in-out;
+}
+
+#movies img:hover {
+    transform: scale(1.5)
 }
 
 

@@ -26,4 +26,13 @@ html, body {
     max-width: 100%;
 }
 
+#movie-modals .modal-content {
+    background-color: #330303fc;
+    color: white;
+}
+
+#movie-modals .modal-header .close {
+    color: white;
+}
+
 

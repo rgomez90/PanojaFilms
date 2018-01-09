@@ -53,9 +53,9 @@
 <body>
     <div id="main">
         <header id="myHeader">
-                <div id="logoHeader">
-                    <img class="img-fluid mx-auto" src="assets/img/logo-banner.jpg" alt="logo-banner">
-                </div>
+            <div id="logoHeader">
+                <img class="mx-auto" src="assets/img/logo-banner.jpg" alt="logo-banner">
+            </div>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarsExampleDefault">
@@ -89,117 +89,491 @@
                 </div>
                 <div class="col-md">
                     <img class="img-fluid w-50" src="assets/img/movies/covers/adapted/nddc-cover-adapted.jpg" alt="Nunca dejes de creer" data-toggle="modal"
-                        data-target="#coverModal">
+                        data-target="#nddc-modal">
                 </div>
                 <div class="col-md">
                     <img class="img-fluid w-50" src="assets/img/movies/covers/adapted/tvyt-cover-adapted.jpg" alt="Tiempo, Vicio y Talent" data-toggle="modal"
-                        data-target="#coverModal">
+                        data-target="#tvt-modal">
                 </div>
                 <div class="col-md">
                     <img class="img-fluid w-50" src="assets/img/movies/covers/adapted/cyl-cover-adapted.jpg" alt="Cuerdos y Locos" data-toggle="modal"
-                        data-target="#coverModal">
+                        data-target="#cyl-modal">
                 </div>
                 <div class="col-md">
                     <img class="img-fluid w-50" src="assets/img/movies/covers/adapted/mlm-cover-adapted.jpg" alt="Matando las musaranas" data-toggle="modal"
-                        data-target="#coverModal">
+                        data-target="#mlm-modal">
                 </div>
             </div>
         </div>
 
-        <!--MODALS-->
+        <!--MODALS--> <!--TODO: Try to change modal content through JS or JQuery or sth.-->
+        <div id="movie-modals">
+            <!-- Modal ad -->
+            <div id="ad-Modal" class="modal fade bd-example-modal-lg">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
 
-        <!-- The Modal -->
-        <div id="ad-Modal" class="modal fade bd-example-modal-lg">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Adios Dios</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h5 class="modal-title">Adios Dios</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
+                        <!-- Modal body -->
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-fluid" src="assets/img/movies/covers/adapted/ad-cover-adapted.jpg" alt="NddC">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ul class="carousel-indicators">
+                                                <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="1"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="2"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="3"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="4"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="5"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="6"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="7"></li>
+                                                <li data-target="#ad-carousel" data-slide-to="8"></li>
+                                            </ul>
 
-                    <!-- Modal body -->
-                    <div class="modal-body container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img class="img-fluid" src="assets/img/movies/covers/adapted/ad-cover-adapted.jpg" alt="NddC">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div id="demo" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ul class="carousel-indicators">
-                                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                            <li data-target="#demo" data-slide-to="1"></li>
-                                            <li data-target="#demo" data-slide-to="2"></li>
-                                            <li data-target="#demo" data-slide-to="3"></li>
-                                            <li data-target="#demo" data-slide-to="4"></li>
-                                            <li data-target="#demo" data-slide-to="5"></li>
-                                            <li data-target="#demo" data-slide-to="6"></li>
-                                            <li data-target="#demo" data-slide-to="7"></li>
-                                            <li data-target="#demo" data-slide-to="8"></li>
-                                        </ul>
+                                            <!-- The slideshow -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/movies/thumbnails/ad1.png" alt="1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad2.png" alt="2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad3.png" alt="3">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad4.png" alt="4">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad5.png" alt="5">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad6.png" alt="6">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad7.png" alt="7">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/ad8.png" alt="8">
+                                                </div>
+                                            </div>
 
-                                        <!-- The slideshow -->
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="img-fluid" src="assets/img/movies/thumbnails/ad1.png" alt="1">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad2.png" alt="2">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad3.png" alt="3">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad4.png" alt="4">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad5.png" alt="5">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad6.png" alt="6">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad7.png" alt="7">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/img/movies/thumbnails/ad8.png" alt="8">
-                                            </div>
+                                            <!-- Left and right controls -->
+                                            <a class="carousel-control-prev" href="#ad-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#ad-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+
                                         </div>
 
-                                        <!-- Left and right controls -->
-                                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                            <span class="carousel-control-prev-icon"></span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                                            <span class="carousel-control-next-icon"></span>
-                                        </a>
-
                                     </div>
-
-                                </div>
-                                <div class="row">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                        dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                        quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                        nec, vulputate</p>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                                            aliquet nec, vulputate</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-9">
-                        <p>Test</p>
-                    </div>
+                        <div class="col-md-9">
+                            <p>Test</p>
+                        </div>
 
 
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal 2 -->
+            <div id="nddc-modal" class="modal fade bd-example-modal-lg">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Nunca dejes de creer</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-fluid" src="assets/img/movies/covers/adapted/nddc-cover-adapted.jpg" alt="NddC">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div id="nddc-carousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ul class="carousel-indicators">
+                                                <li data-target="#nddc-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="1"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="2"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="3"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="4"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="5"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="6"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="7"></li>
+                                                <li data-target="#nddc-carousel" data-slide-to="8"></li>
+                                            </ul>
+
+                                            <!-- The slideshow -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/movies/thumbnails/nddc1.png" alt="1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc2.png" alt="2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc3.png" alt="3">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc4.png" alt="4">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc5.png" alt="5">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc6.png" alt="6">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc7.png" alt="7">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/nddc8.png" alt="8">
+                                                </div>
+                                            </div>
+
+                                            <!-- Left and right controls -->
+                                            <a class="carousel-control-prev" href="#nddc-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#nddc-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                                            aliquet nec, vulputate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Test</p>
+                        </div>
+
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal3 -->
+            <div id="tvt-modal" class="modal fade bd-example-modal-lg">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Adios Dios</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-fluid" src="assets/img/movies/covers/adapted/tvyt-cover-adapted.jpg" alt="tiempo-vicio-talento">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div id="tvyt-carousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ul class="carousel-indicators">
+                                                <li data-target="#tvyt-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="1"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="2"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="3"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="4"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="5"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="6"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="7"></li>
+                                                <li data-target="#tvyt-carousel" data-slide-to="8"></li>
+                                            </ul>
+
+                                            <!-- The slideshow -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/movies/thumbnails/tvyt1.png" alt="1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt2.png" alt="2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt3.png" alt="3">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt4.png" alt="4">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt5.png" alt="5">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt6.png" alt="6">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt7.png" alt="7">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/tvyt8.png" alt="8">
+                                                </div>
+                                            </div>
+
+                                            <!-- Left and right controls -->
+                                            <a class="carousel-control-prev" href="#tvyt-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#tvyt-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                                            aliquet nec, vulputate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal4 -->
+            <div id="cyl-modal" class="modal fade bd-example-modal-lg">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cuerdos y Locos</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-fluid" src="assets/img/movies/covers/adapted/cyl-cover-adapted.jpg" alt="NddC">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div id="cyl-carousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ul class="carousel-indicators">
+                                                <li data-target="#cyl-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="1"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="2"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="3"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="4"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="5"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="6"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="7"></li>
+                                                <li data-target="#cyl-carousel" data-slide-to="8"></li>
+                                            </ul>
+
+                                            <!-- The slideshow -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/movies/thumbnails/cyl1.png" alt="1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl2.png" alt="2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl3.png" alt="3">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl4.png" alt="4">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl5.png" alt="5">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl6.png" alt="6">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl7.png" alt="7">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/cyl8.png" alt="8">
+                                                </div>
+                                            </div>
+
+                                            <!-- Left and right controls -->
+                                            <a class="carousel-control-prev" href="#cyl-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#cyl-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                                            aliquet nec, vulputate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--modal5-->
+            <div id="mlm-modal" class="modal fade bd-example-modal-lg">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Matando las musarañas</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-fluid" src="assets/img/movies/covers/adapted/mlm-cover-adapted.jpg" alt="NddC">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div id="mlm-carousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ul class="carousel-indicators">
+                                                <li data-target="#mlm-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="1"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="2"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="3"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="4"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="5"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="6"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="7"></li>
+                                                <li data-target="#mlm-carousel" data-slide-to="8"></li>
+                                            </ul>
+
+                                            <!-- The slideshow -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/movies/thumbnails/mlm1.png" alt="1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm2.png" alt="2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm3.png" alt="3">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm4.png" alt="4">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm5.png" alt="5">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm6.png" alt="6">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm7.png" alt="7">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/movies/thumbnails/mlm8.png" alt="8">
+                                                </div>
+                                            </div>
+
+                                            <!-- Left and right controls -->
+                                            <a class="carousel-control-prev" href="#mlm-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#mlm-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                                            aliquet nec, vulputate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -22,8 +22,10 @@
     font-size: 120%
 }
 
-#logoHeader {
-
+#logoHeader img {
+width: 50%;
+display: block;
+margin: auto;
 }
 
 #navbarHome .nav-link {

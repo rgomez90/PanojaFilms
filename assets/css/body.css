@@ -8,32 +8,22 @@ html, body {
 
 #movies {
     margin-top: 4rem;
-    margin-bottom: 4rem
+    margin-bottom: 4rem;
+    width:80%;
 }
 
 #movies img {
     transition: all .3s ease-in-out;
+    border: solid 1px rgba(172, 47, 9, 0.801)
 }
 
 #movies img:hover {
     transform: scale(1.5)
 }
 
-#ad-Modal .carousel-inner img{
+#movie-modals .carousel-inner img{
     height: auto;
     max-width: 100%;
 }
 
-#ad-Modal .carousel-inner {
-    height: 25%;
-}
 
-
-/*
-.movie-thumbs {
-   box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
-    -webkit-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
-    -moz-box-shadow: 7px 4px 31px 5px rgba(255, 0, 0, 0.58);
-    border-radius: 10px;
-    }
-*/

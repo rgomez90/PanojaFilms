@@ -10,11 +10,12 @@ html, body {
     margin-top: 4rem;
     margin-bottom: 4rem;
     width:80%;
+    color:white;
 }
 
 #movies img {
     transition: all .3s ease-in-out;
-    border: solid 1px rgba(172, 47, 9, 0.801)
+    border: solid 1.5px yellow
 }
 
 #movies img:hover {
@@ -34,5 +35,81 @@ html, body {
 #movie-modals .modal-header .close {
     color: white;
 }
+
+
+/*Popover CSS*/
+@media (min-width: 980px) {
+	.popover {
+		width:700px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.popover {
+    width:600px;
+	}
+	.popover-title {
+		padding: 4px 10px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.popover-content {
+		padding: 4px 10px;
+	}
+}
+@media (min-width: 481px) and (max-width: 767px){
+	.popover {
+		width:200px;
+	}
+	.popover-title {
+		padding: 4px 10px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.popover-content {
+		padding: 4px 10px;
+	}
+}
+	
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.popover {
+  max-width:900px;
+  background-color: rgb(83, 3, 3);
+}
+
+.popover-body {
+    color: white;
+}
+
+#cover {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-destacate {
+    color: rgb(148, 148, 3);
+}
+
+.movie-desc {
+    animation-duration:2s;
+    animation-delay: 1s;
+}
+
+
+
 
 

@@ -18,8 +18,9 @@
     color: red !important;
 }
 
-#myHeader .active {
-    font-size: 120%
+#myHeader .active .nav-link {
+    font-size: 200%;
+    color:white
 }
 
 #logoHeader img {

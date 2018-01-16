@@ -95,13 +95,28 @@ html, body {
     color: white;
 }
 
+.popover .movie-thumbnail .carousel-inner {
+	width: 85%;
+}
+
 #cover {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.helper {
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .movie-destacate {
     color: rgb(148, 148, 3);
+}
+
+#movie-logo{
+	padding-right: 0%;
 }
 
 .movie-desc {

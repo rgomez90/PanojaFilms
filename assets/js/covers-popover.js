@@ -8,14 +8,14 @@ $('[data-toggle="popover"]').popover({
   animation: false,
   placement: "right",
   rel: "popover",
-  trigger: "hover",
+  trigger: "click",
     content:
     '<div class="container-fluid">'+
     '<div class="row">'+
-        '<div class="col-sm-4">'+
-            '<img id="cover" src="/assets/img/movies/covers/adapted/tvyt-cover-adapted.jpg" alt="">'+
+        '<div id="movie-logo" class="col-sm-3">'+
+            '<span class="helper"></span><img id="cover" src="/assets/img/movies/covers/adapted/tvyt-cover-adapted.jpg" alt="">'+
         '</div>'+
-        '<div class="col-sm-8">'+
+        '<div class="col-sm-9">'+
             '<div class="videoWrapper">'+
                 '<iframe src="https://www.youtube.com/embed/mPxpRqWCo_0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'+
             '</div>'+
@@ -29,8 +29,8 @@ $('[data-toggle="popover"]').popover({
                 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>'+
         '</div>'+
     '</div>'+
-    '<div class="row">'+
-        '<div class="col-sm">'+
+    '<div class="row movie-thumbnail">'+
+        '<div class="col-sm" align="center">'+
             '<div class=" carousel slide movie-carousel-pics" data-ride="carousel">'+
                 '<div class="carousel-inner">'+
                     '<div class="carousel-item active">'+
@@ -39,15 +39,8 @@ $('[data-toggle="popover"]').popover({
                     '<div class="carousel-item">'+
                         '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad2.png" alt="Second slide">'+
                     '</div>'+
-''+
-                '</div>'+
-            '</div>'+
-        '</div>'+
-        '<div class="col-sm">'+
-            '<div class="carousel slide movie-carousel-pics" data-ride="carousel">'+
-                '<div class="carousel-inner">'+
-                    '<div class="carousel-item active">'+
-                        '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad3.png" alt="First slide">'+
+                    '<div class="carousel-item">'+
+                        '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad3.png" alt="Second slide">'+
                     '</div>'+
                     '<div class="carousel-item">'+
                         '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad4.png" alt="Second slide">'+
@@ -55,7 +48,7 @@ $('[data-toggle="popover"]').popover({
                 '</div>'+
             '</div>'+
         '</div>'+
-        '<div class="col-sm">'+
+        '<div class="col-sm" align="center">'+
             '<div class="carousel slide movie-carousel-pics" data-ride="carousel">'+
                 '<div class="carousel-inner">'+
                     '<div class="carousel-item active">'+
@@ -64,14 +57,8 @@ $('[data-toggle="popover"]').popover({
                     '<div class="carousel-item">'+
                         '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad6.png" alt="Second slide">'+
                     '</div>'+
-                '</div>'+
-            '</div>'+
-        '</div>'+
-        '<div class="col-sm">'+
-            '<div class="carousel slide movie-carousel-pics" data-ride="carousel">'+
-                '<div class="carousel-inner">'+
-                    '<div class="carousel-item active">'+
-                        '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad7.png" alt="First slide">'+
+                    '<div class="carousel-item">'+
+                        '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad7.png" alt="Second slide">'+
                     '</div>'+
                     '<div class="carousel-item">'+
                         '<img class="d-block w-100" src="/assets/img/movies/thumbnails/ad8.png" alt="Second slide">'+
@@ -79,7 +66,7 @@ $('[data-toggle="popover"]').popover({
                 '</div>'+
             '</div>'+
         '</div>'+
-    '</div>'+
+   '</div>'+
 '</div>'
 });
 

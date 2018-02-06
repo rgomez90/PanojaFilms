@@ -8,6 +8,10 @@
 	font-style: normal;
 }
 
+#myHeader {
+    margin-bottom: 4rem
+}
+
 #myHeader .navbar {
     padding-top:1rem;
     padding-bottom: 1rem;
@@ -16,6 +20,10 @@
 
 #myHeader .navbar-brand:hover {
     color: red !important;
+}
+
+#myHeader .nav-item {
+    margin-right: 5rem;
 }
 
 #myHeader .active .nav-link {

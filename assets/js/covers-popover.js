@@ -1,12 +1,12 @@
 const adSinopsis = "Un hombre acude al confesionario de la iglesia para confesar que ha violado los siete pecados capitales, y ha roto los diez mandamientos en un solo día."
 const nddjSinopsis = "Diego es un niño pequeño que esta preparando su bicicleta para una gran carrera multitudinaria, aunque sea una carrera para mayores, no hay problema porque Diego sabe que si se cree y se trabaja, se puede."
-const tvvtSinopsis = "Gabi y Koke son dos amigos de la infancia que han llevado caminos muy diferentes, tras una conversación Gabi se da cuenta que tendrá que elegir entre dos hipotéticos futuros delimitados por el tiempo el vicio y el talento que traerán diferentes consecuencias para todos los que le rodean."
+const tvytSinopsis = "Gabi y Koke son dos amigos de la infancia que han llevado caminos muy diferentes, tras una conversación Gabi se da cuenta que tendrá que elegir entre dos hipotéticos futuros delimitados por el tiempo el vicio y el talento que traerán diferentes consecuencias para todos los que le rodean."
 const cylSinopsis = "Matías Panoja es 1 entre 7.000 millones mas, tiene muy clara su insignificancia en el mundo y que es el único cuerdo en este mundo de locos, pero tendrá que convencer a una psicóloga de que así es, si quiere optar al trabajo al que aspira."
 const mlmSinopsis = "Los alumnos de una clase tendrán que realizar un ejercicio libre a petición del profesor. Todos parecen llevarlo a cabo salvo un alumno…"
 
 const adYoutubeLink = "https://www.youtube.com/embed/7EX5GstZ3mE"
 const nddjYoutubeLink = "https://www.youtube.com/embed/mPxpRqWCo_0"
-const tvvtYoutubeLink = "https://www.youtube.com/embed/qzEf31RHfrc"
+const tvytYoutubeLink = "https://www.youtube.com/embed/qzEf31RHfrc"
 const cylYoutubeLink = "https://www.youtube.com/embed/zsCtJh16r-s"
 const mlmYoutubeLink = "https://www.youtube.com/embed/roj5IaZLne8"
 
@@ -31,9 +31,9 @@ $('[data-toggle="popover"]').each(function () {
             sinopsis = nddjSinopsis
             youtubeLink=nddjYoutubeLink
             break;
-        case 'tvvt':
-            sinopsis = tvvtSinopsis
-            youtubeLink=tvvtYoutubeLink
+        case 'tvyt':
+            sinopsis = tvytSinopsis
+            youtubeLink=tvytYoutubeLink
             break;
         case 'cyl':
             sinopsis = cylSinopsis

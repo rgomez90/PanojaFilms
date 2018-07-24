@@ -23,6 +23,11 @@
   overflow: hidden; 
 }
 
+#image-grid .col-sm-3:hover {
+  transform: scale(3);
+  overflow: visible;
+}
+
 #image-grid img{
   width: 100%;
   height: 100%;

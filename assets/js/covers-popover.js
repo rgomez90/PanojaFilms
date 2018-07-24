@@ -113,6 +113,7 @@ $('[data-toggle="popover"]').each(function () {
             '</div>' +
             '</div>'
     }).mouseenter(function () {
+        $('[data-toggle="popover"]').popover('hide');
         var $po = $(this).popover();
                $(this).popover('show');
                $('.popover-body').mouseleave(function(){

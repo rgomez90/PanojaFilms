@@ -10,38 +10,40 @@ const tvytYoutubeLink = "https://www.youtube.com/embed/qzEf31RHfrc"
 const cylYoutubeLink = "https://www.youtube.com/embed/zsCtJh16r-s"
 const mlmYoutubeLink = "https://www.youtube.com/embed/roj5IaZLne8"
 
-$(document).ready(function () {
+var temp = false;
+
+/*$(document).ready(function () {
     $(".main-cover")
         .addClass("animated fadeInUpBig");
 });
-
+*/
 var t = $('[data-toggle="popover"]')
 var s = $('[data-desc]')
 $('[data-toggle="popover"]').each(function () {
     var att = $(this).attr('data-desc')
     var sinopsis = ""
-    var youtubeLink =""
+    var youtubeLink = ""
     var imagePrefix = ""
     switch (att) {
         case 'ad':
             sinopsis = adSinopsis
-            youtubeLink=adYoutubeLink
+            youtubeLink = adYoutubeLink
             break;
         case 'nddc':
             sinopsis = nddjSinopsis
-            youtubeLink=nddjYoutubeLink
+            youtubeLink = nddjYoutubeLink
             break;
         case 'tvyt':
             sinopsis = tvytSinopsis
-            youtubeLink=tvytYoutubeLink
+            youtubeLink = tvytYoutubeLink
             break;
         case 'cyl':
             sinopsis = cylSinopsis
-            youtubeLink=cylYoutubeLink
+            youtubeLink = cylYoutubeLink
             break;
         case 'mlm':
             sinopsis = mlmSinopsis
-            youtubeLink=mlmYoutubeLink
+            youtubeLink = mlmYoutubeLink
             break;
         default:
             break;
@@ -49,19 +51,19 @@ $('[data-toggle="popover"]').each(function () {
     imagePrefix = att
     $(this).popover({
         html: true,
-        animation: false,
+        animation: true,
         placement: "right",
         rel: "popover",
-        trigger: "hover",
+        trigger: "manual ",
         content:
-            '<div class="container-fluid">' +
+            '<div class="container-fluid popovr">' +
             '<div class="row">' +
             '<div id="movie-logo" class="col-sm-3">' +
-            '<span class="helper"></span><img id="cover" src="/assets/img/movies/covers/adapted/'+imagePrefix+'-cover-adapted.jpg" alt="'+imagePrefix+'">' +
+            '<span class="helper"></span><img id="cover" src="/assets/img/movies/covers/adapted/' + imagePrefix + '-cover-adapted.jpg" alt="' + imagePrefix + '">' +
             '</div>' +
             '<div class="col-sm-9">' +
             '<div class="videoWrapper">' +
-            '<iframe src="'+youtubeLink+'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' +
+            '<iframe src="' + youtubeLink + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -76,16 +78,16 @@ $('[data-toggle="popover"]').each(function () {
             '<div class=" carousel slide movie-carousel-pics" data-ride="carousel">' +
             '<div class="carousel-inner">' +
             '<div class="carousel-item active">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'1.png" alt="'+imagePrefix+'">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '1.png" alt="' + imagePrefix + '">' +
             '</div>' +
             '<div class="carousel-item">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'2.png" alt="'+imagePrefix+'e">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '2.png" alt="' + imagePrefix + 'e">' +
             '</div>' +
             '<div class="carousel-item">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'3.png" alt="'+imagePrefix+'e">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '3.png" alt="' + imagePrefix + 'e">' +
             '</div>' +
             '<div class="carousel-item">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'4.png" alt="'+imagePrefix+'e">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '4.png" alt="' + imagePrefix + 'e">' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -94,22 +96,28 @@ $('[data-toggle="popover"]').each(function () {
             '<div class="carousel slide movie-carousel-pics" data-ride="carousel">' +
             '<div class="carousel-inner">' +
             '<div class="carousel-item active">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'5.png" alt="'+imagePrefix+'">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '5.png" alt="' + imagePrefix + '">' +
             '</div>' +
             '<div class="carousel-item">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'6.png" alt="'+imagePrefix+'e">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '6.png" alt="' + imagePrefix + 'e">' +
             '</div>' +
             '<div class="carousel-item">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'7.png" alt="'+imagePrefix+'e">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '7.png" alt="' + imagePrefix + 'e">' +
             '</div>' +
             '<div class="carousel-item">' +
-            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/'+imagePrefix+'8.png" alt="'+imagePrefix+'e">' +
+            '<img class="d-block w-100" src="/assets/img/movies/thumbnails/' + imagePrefix + '8.png" alt="' + imagePrefix + 'e">' +
             '</div>' +
             '</div>' +
             '</div>' +
             '</div>' +
             '</div>' +
             '</div>'
+    }).mouseenter(function () {
+        var $po = $(this).popover();
+               $(this).popover('show');
+               $('.popover-body').mouseleave(function(){
+                   $po.popover('hide');
+               })
     })
 });
 
@@ -118,11 +126,17 @@ $('.main-cover').on('shown.bs.popover', function (e) {
     $('.carousel').carousel({
         interval: 2000,
     });
-
+    temp = false;
     $('#cover').addClass('animated flip');
     $('.movie-carousel-pics').addClass('animated zoomInDown');
     $('.movie-desc').addClass('animated fadeIn');
+    $('.popover-body').mouseleave(function () {
+        $(this).popover('hide');
+    });
 });
+
+
+
 
 
 

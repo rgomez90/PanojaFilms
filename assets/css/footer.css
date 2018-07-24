@@ -3,6 +3,10 @@
     color: white;
 }
 
+.footer-copyright {
+    font-family: 'Cutive Mono', sans-serif;
+}
+
 
 #myFooter h5 {
     font-size: 18px;

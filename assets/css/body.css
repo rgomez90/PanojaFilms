@@ -18,24 +18,13 @@ html, body {
     border: solid 1.5px yellow
 }
 
-#movies img:hover {
-    transform: scale(1.5)
+.main-cover:hover {
+	opacity: 0.3;
 }
 
-#movie-modals .carousel-inner img{
-    height: auto;
-    max-width: 100%;
+.movie-title {
+	font-family: 'Cutive Mono', sans-serif ;
 }
-
-#movie-modals .modal-content {
-    background-color: #330303fc;
-    color: white;
-}
-
-#movie-modals .modal-header .close {
-    color: white;
-}
-
 
 /*Popover CSS*/
 @media (min-width: 980px) {

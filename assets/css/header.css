@@ -28,7 +28,7 @@ header .navbar {
 
 #navbarHome .active .nav-link {
     font-size: 200%;
-    color:white
+    color:red;    
 }
 
 #logoHeader img {
@@ -40,7 +40,7 @@ margin: auto;
 #navbarHome .nav-link {
     font-size: 150%;
     font-family: 'CoffeeTin';
-    color:red
+    color:white;
     
 }
 

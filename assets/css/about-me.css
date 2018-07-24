@@ -16,6 +16,13 @@
     padding: 0rem 5rem;
     height: 100%;
   }
+
+  section p {
+    animation-duration:2s;
+    animation-delay: 1s;
+    -vendor-animation-duration: 2s;
+    -vendor-animation-delay: 2s;
+  }
   
 #image-grid .col-sm-3 {
   padding: .5rem .5rem;
@@ -25,12 +32,18 @@
 
 #image-grid .col-sm-3:hover {
   transform: scale(3);
+  transition: 1s;
   overflow: visible;
+  z-index: 1;
 }
 
 #image-grid img{
   width: 100%;
   height: 100%;
+  animation-duration:2s;
+    animation-delay: 1s;
+    -vendor-animation-duration: 2s;
+    -vendor-animation-delay: 2s;
 }
 body { margin:0; /* This is used to reset any browser-default margins */ }
 

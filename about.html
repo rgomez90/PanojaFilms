@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="assets/css/about-me.css">
     <link rel="stylesheet" href="assets/css/header.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
     <!-- Include jQuery (required) and the JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -60,7 +62,8 @@
 </head>
 
 <body style="background-color: black">
-    <header id="myHeader">
+    <div  class="content">
+    <header id="about-me-header">
         <!--<a href="index.html">
             <div id="logoHeader" class=" jumbotron-fluid img-fluid" href="#logoHeader" href="index.html" style="background: url(assets/img/logo-banner.jpg); background-size: 100% 100%; height: 15rem"></div>
         </a>-->
@@ -75,61 +78,89 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Cortometrajes</a>
                     </li>
-                                       <li class="nav-item active">
-                        <a class="nav-link active" href="about.html">Sobre Mi</a>
+                    <li class="nav-item active">
+                        <a class="nav-link active" rounded href="about.html">Sobre Mi</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div id="about-me" class="masthead">
-            <p class="masthead-intro">Hola, soy</p>
-            <h1 class="masthead-heading">Guillermo!</h1>
-        </div>
     </header>
-
-    <section>
-        <h2>Introduction</h2>
-        <p>Lorem ipsum dolor sit amet, vis choro dicam ut. Qui no dicant fierent inciderint, ne ius atomorum consequuntur, ea
-            nibh nullam mel. No atqui placerat liberavisse mei, ne ceteros nostrum eum. In wisi sonet insolens pro. Ei movet
-            malorum consetetur duo. Ex duo simul invidunt, nam dolor graeco ut, quo error aeterno consectetuer te.</p>
-        <p class="space-maker">Vel ne labitur nominavi luptatum, eu mei labore dictas. Nam no tamquam scriptorem. Ius te euismod aliquam scaevola.</p>
-    </section>
-
-    <section>
-        <h2>Where I'm From</h2>
-        <p class="space-maker">Dicat soluta at nec. Adhuc iuvaret hendrerit mei et, ne sea suas fuisset eloquentiam. Illud aliquid cum at, qui everti
-            deseruisse te, apeirian periculis eu nam. Nibh impetus offendit ne est.</p>
-    </section>
-
-    <section>
-        <h2>More About Me</h2>
-        <p class="space-maker">Te harum graeco suavitate sed, at dolore epicuri omittam usu. Porro dicant recusabo et eum. Usu eu nihil munere urbanitas,
-            eu vix unum corpora partiendo, vis legere euismod utroque eu.</p>
-        <h3>What's your dream job?</h3>
-        <p class="space-maker">Amet possim ex mei, vis ei mucius aperiam, ea quidam adolescens sed. Tota detracto cu duo, delenit argumentum eu
-            quo.</p>
-        <h3>What music have you been listening to lately?</h3>
-        <p>Ius postulant petentium at, ancillae delicata interpretaris in vis, ei eos suscipit nominati quaerendum. Quo ne tota
-            ludus vivendum. An usu noluisse delicata, delectus petentium et eum.</p>
-    </section>
+    <div class="container">
+        <div class="row" id="test">
+            <div class="col-sm">
+                <section>
+                    <p>
+                        <b>Panoja Films</b> es una productora audiovisual española completamente independiente, creada por
+                        <b>Guillermo Paniagua Dominguez
+                        </b> (guionista y director , Madrid 1990)​​​​​​​​​​​​, con el fin de realizar productos audiovisuales
+                        de ficción de bajo presupuesto y alta calidad.
+                    </p>
+                    <p class="space-maker">Hasta la fecha, Panoja Films ha presentado cuatro cortometrajes, un mediometraje, y se espera el lanzamiento
+                        del primer largometraje para comienzos de 2019.</p>
+                </section>
+            </div>
+        </div>
+        <div id="image-grid">
+            <div class="row">
+                <div class="col-sm-3 ">
+                        <img class="img-fluid" src="/assets/img/about-me/10.jpg" alt="">
+                </div>
+                <div class="col-sm-3">
+                        <img class="img-fluid rounded" src="/assets/img/about-me/2.jpg" alt="">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/10.jpg" alt="">
+                </div>
+                <div class="col-sm-3 ">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/5.jpg" alt="">
+                </div>
+                <div class="col-sm-3 ">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/10.jpg" alt="">
+                </div>
+                <div class="col-sm-3 ">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/7.jpg" alt="">
+                </div>
+                <div class="col-sm-3 rounded">
+                        <img class="img-fluid rounded " src="/assets/img/about-me/8.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/9.jpg" alt="">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/10.jpg" alt="">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/11.jpg" alt="">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid rounded" src="/assets/img/about-me/12.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-
     <footer id="myFooter" class="">
         <div class="container-fluid">
             <div class="row">
-                <div class="col  social-networks">
+                <div class="col-sm-4  social-networks">
                     <h5>Youtube</h5>
                     <a href="https://www.youtube.com/user/panojas90" target="_blank" class="google">
                         <i class="fa fa-youtube"></i>
                     </a>
                 </div>
-                <div class="col social-networks">
+                <div class="col-sm-4 social-networks">
                     <h5>Facebook</h5>
                     <a href="#" class="facebook">
                         <i class="fa fa-facebook"></i>
                     </a>
                 </div>
-                <div class="col social-networks">
+                <div class="col-sm-4 social-networks">
                     <h5>Twitter</h5>
                     <a href="#" class="twitter">
                         <i class="fa fa-twitter"></i>
@@ -140,12 +171,14 @@
                 <a class="btn btn-light contact text-center" href="mailto:" role="button">Contáctame</a>
             </div>
             <div class="footer-copyright text-center mt-5">
-                <p>© 2017 Copyright
+                <p>© 2018 Copyright
                     <a href="http://panojafilms.com">PanojaFilms</a> - All Rights Reserved. </p>
             </div>
         </div>
+        </div>
 
     </footer>
+</div>
 </body>
 
 </html>

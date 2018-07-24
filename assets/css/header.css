@@ -12,7 +12,7 @@
     margin-bottom: 4rem
 }
 
-#myHeader .navbar {
+header .navbar {
     padding-top:1rem;
     padding-bottom: 1rem;
     background-color: black !important;
@@ -22,11 +22,11 @@
     color: red !important;
 }
 
-#myHeader .nav-item {
+#navbarHome .nav-item {
     margin-right: 5rem;
 }
 
-#myHeader .active .nav-link {
+#navbarHome .active .nav-link {
     font-size: 200%;
     color:white
 }

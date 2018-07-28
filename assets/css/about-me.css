@@ -1,56 +1,53 @@
-
-  #about-me-header {
-    margin-bottom: 2em; 
-  }
-    
-  /* The p tags that are descendants of the section tags are the answers */
-  section p {
-    font-size: 1.4em;
-    line-height: 1.2em;
-    color: whitesmoke;
-    font-family: 'Cutive Mono', sans-serif;
-
-  }
-
-  #image-grid {
-    padding: 0rem 5rem;
-    height: 100%;
-  }
-
-  section p {
-    animation-duration:2s;
-    animation-delay: 1s;
-    -vendor-animation-duration: 2s;
-    -vendor-animation-delay: 2s;
-  }
-  
-#image-grid .col-sm-3 {
-  padding: .5rem .5rem;
-  height: 10rem;
-  overflow: hidden; 
+#about-me-header {
+  margin-bottom: 2em;
 }
 
-#image-grid .col-sm-3:hover {
+/* The p tags that are descendants of the section tags are the answers */
+
+section p {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  color: whitesmoke;
+  font-family: 'Cutive Mono', sans-serif;
+}
+
+section p {
+  animation-duration: 2s;
+  animation-delay: 1s;
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 2s;
+}
+
+#image-grid .col-sm {
+  padding: .5rem .5rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.contact {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#image-grid .col-sm:hover {
   transform: scale(3);
   transition: 1s;
   overflow: visible;
   z-index: 1;
 }
 
-#image-grid img{
+#image-grid img {
   width: 100%;
   height: 100%;
-  
 }
-body { margin:0; /* This is used to reset any browser-default margins */ }
 
-  /* This class is included in the last p tag of each section to create more space */
-  .space-maker {
-    margin-bottom: 2em;
-  }
-  
-  .content {
-    height: 100vh;
-  }
+body {
+  margin: 0;
+  /* This is used to reset any browser-default margins */
+}
 
- 
+/* This class is included in the last p tag of each section to create more space */
+
+.space-maker {
+  margin-bottom: 2em;
+}

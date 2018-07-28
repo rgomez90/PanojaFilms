@@ -96,52 +96,55 @@
                             </b> (guionista y director , Madrid 1990)​​​​​​​​​​​​, con el fin de realizar productos audiovisuales
                             de ficción de bajo presupuesto y alta calidad.
                         </p>
-                        <p class="space-maker animated fadeInUp">Hasta la fecha, Panoja Films ha presentado cuatro cortometrajes, un mediometraje, y se espera el
+                        <p class="animated fadeInUp">Hasta la fecha, Panoja Films ha presentado cuatro cortometrajes, un mediometraje, y se espera el
                             lanzamiento del primer largometraje para comienzos de 2019.</p>
+                        <a class="btn btn-light contact text-center"  href="mailto:" role="button">Contáctame</a>
                     </section>
                 </div>
             </div>
-            <div id="image-grid">
-                <div class="row">
-                    <div class="col-sm-3 ">
-                        <img class="img-fluid animated zoomIn delay-4s" src="/assets/img/about-me/10.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/2.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/10.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3 ">
-                        <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 ">
-                        <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/5.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3 ">
-                        <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/10.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3 ">
-                        <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/7.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3 rounded">
+                <div id="image-grid" class ="row">
+                    <div class="col-3">
                         <img class="img-fluid animated zoomIn rounded " src="/assets/img/about-me/8.jpg" alt="">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img class="img-fluid animated zoomIn rounded" src="/assets/img/about-me/9.jpg" alt="">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-sm ">
+                                <img class="img-fluid animated zoomIn rounded " src="/assets/img/about-me/2.jpg" alt="">
+                            </div>
+                            <div class="col-sm ">
+                                <img class="img-fluid animated zoomIn delay-4s" src="/assets/img/about-me/3.jpg" alt="">
+                            </div>
+                            <div class="col-sm">
+                                <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm">
+                                <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/5.jpg" alt="">
+                            </div>
+                            <div class="col-sm ">
+                                <img class="img-fluid  animated zoomIn rounded" src="/assets/img/skull-white.png" alt="">
+                            </div>
+                            <div class="col-sm ">
+                                <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm ">
+                                <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/7.jpg" alt="">
+                            </div>
+                            <div class="col-sm">
+                                <img class="img-fluid  animated zoomIn rounded" src="/assets/img/about-me/9.jpg" alt="">
+                            </div>
+                            <div class="col-sm ">
+                                <img class="img-fluid animated zoomIn rounded " src="/assets/img/about-me/10.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid animated zoomIn rounded" src="/assets/img/about-me/10.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid animated zoomIn rounded" src="/assets/img/about-me/11.jpg" alt="">
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid animated zoomIn rounded" src="/assets/img/about-me/12.jpg" alt="">
+                    <div class="col-3 rounded">
+                        <img class="img-fluid animated zoomIn rounded " src="/assets/img/about-me/1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -168,9 +171,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <a class="btn btn-light contact text-center" href="mailto:" role="button">Contáctame</a>
-                </div>
+
                 <div class="footer-copyright text-center mt-5">
                     <p>© 2018 Copyright
                         <a href="http://panojafilms.com">PanojaFilms</a> - All Rights Reserved. </p>
@@ -180,6 +181,22 @@
 
     </footer>
     </div>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+
+        typewriter.typeString('Hello World!')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Strings can be removed')
+            .pauseFor(2500)
+            .deleteChars(7)
+            .typeString('altered!')
+            .start();
+    </script>
 </body>
 
 </html>

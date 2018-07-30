@@ -29,8 +29,15 @@ section p {
   margin-top: 1rem;
 }
 
-#image-grid .col-sm:hover {
+.hover-scale:hover {
   transform: scale(3);
+  transition: 1s;
+  overflow: visible;
+  z-index: 1;
+}
+
+.hover-scale-small:hover {
+  transform: scale(1.5);
   transition: 1s;
   overflow: visible;
   z-index: 1;
